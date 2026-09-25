@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>QVAC StudyMate</title>
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <main class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">✦</div>
+
+        <div>
+          <h1>QVAC StudyMate</h1>
+          <p>Private AI-powered studying</p>
+        </div>
+      </div>
+
+      <div class="privacy-badge">
+        <span>●</span>
+        On-device AI
+      </div>
+    </header>
+
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span>✦</span>
+          YOUR PRIVATE STUDY COMPANION
+        </div>
+
+        <h2>
+          Turn any topic into a
+          <span>quick study quiz.</span>
+        </h2>
+
+        <p>
+          Enter a topic and let QVAC StudyMate create
+          a practice question directly on your device.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="workspace">
+
+      <div class="card setup-card">
+
+        <div class="card-heading">
+          <div>
+            <span class="label">STEP 01</span>
+            <h3>Choose your topic</h3>
+          </div>
+
+          <span class="card-number">01</span>
+        </div>
+
+        <div class="topic-input-wrapper">
+
+          <label for="topic">
+            What are you studying?
+          </label>
+
+          <input
+            id="topic"
+            type="text"
+            placeholder="e.g. Fiber Optics, Networking, Cybersecurity..."
+            autocomplete="off"
+          />
+
+        </div>
+
+        <div class="suggestions">
+
+          <button class="suggestion" data-topic="Networking">
+            🌐 Networking
+          </button>
+
+          <button class="suggestion" data-topic="Fiber Optics">
+            💡 Fiber Optics
+          </button>
+
+          <button class="suggestion" data-topic="Cybersecurity">
+            🛡️ Cybersecurity
+          </button>
+
+          <button class="suggestion" data-topic="Information Technology">
+            💻 Information Technology
+          </button>
+
+        </div>
+
+        <button id="generateButton" class="generate-button">
+          <span>Generate Question</span>
+          <strong>✦</strong>
+        </button>
+
+      </div>
+
+
+      <div class="card result-card">
+
+        <div class="card-heading">
+
+          <div>
+            <span class="label">STEP 02</span>
+            <h3>Your QVAC quiz</h3>
+          </div>
+
+          <div id="statusBadge" class="status-badge">
+            Ready
+          </div>
+
+        </div>
+
+
+        <div id="result" class="result">
+
+          <div class="empty-state">
+
+            <div class="empty-icon">
+              ✦
+            </div>
+
+            <h4>Your question will appear here.</h4>
+
+            <p>
+              Choose a topic above and generate
+              a question with QVAC.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="result-footer">
+
+          <span>
+            🔒 Your study content stays on-device
+          </span>
+
+          <span>
+            Powered by QVAC
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+
+      <div>
+        <strong>QVAC StudyMate</strong>
+        <span>•</span>
+        Local AI Study Tool
+      </div>
+
+      <div>
+        No cloud inference
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
