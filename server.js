@@ -22,6 +22,8 @@ const modelId = await loadModel({
 
 console.log("✓ QVAC model loaded successfully.");
 
+console.log("REQUEST DEBUG ENABLED");
+console.log("REQUEST DEBUG ENABLED");
 const server = http.createServer(async (req, res) => {
   if (req.method === "GET" && req.url === "/") {
     const html = fs.readFileSync(
